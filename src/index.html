@@ -4,15 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Niver do Vitão</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@400;500;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <header>
-        <h2>
-            Niver do Vitão
-        </h2>
-        <img src="images/aniversario_background.jpg" alt="baloes de aniversario">
+    <header class="hero">
+        <div class="container">
+            <p class="hero__text">
+                Você está convidado para o Aniversário do:
+            </p>
+            <img class="hero__logo" src="images/vitor.png" alt="balões de aniversario">
+            <p class="hero__text">
+                Venha comemorar os 31 anos dessa lenda, que acontecerá em <span id="contador"></span>
+            </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>localização</b>
+                        Chácara Santa Luzia - Tietê - São Paulo
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>O que Levar ?</b>
+                        Kit Churrasco (Até 100,00)
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        16 e 17/08/2024 À partir das 09:30 hs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Confirmar Presença
+                </a>
+            </div>
+        </div>
     </header>
+    <section class="event event--chacara">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Sobre a Chácara</h2>
+                <video width="640" height="360" controls>
+                    <source src="/src/videos/chacara.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeos HTML5.
+                </video>
+                <p class="event__details__description">
+                    TOTAL INFRAESTRUTURA 7 SUÍTES; Quadra Beach Tennis Oficial; 
+                    Futevôlei e Vôlei de Praia (Nova) c/ chuveiro e pergolados. 
+                    PISCINA NOVA PASTILHAS: Adulto e Criança, c/ Aquecimento Solar, Ombrelone 5M, Biribol ou Vôlei, Espreguiçadeiras, Mesas, Escorregador, Macarrões, Bolas, etc. 
+                    CHURRASQUEIRA: Chopeira Elétrica 2 Torneiras, Cervejeira Venax 200 ltrs, Forno Industrial Inox c/ Forno a gás, Espetos de Inox, Mesas, Cadeiras, Travessas p/ Churrasco e todos os acessórios TUDO NOVINHO. 
+                    Freezer 2 portas 550 ltrs. Churrasqueiro inclusive p/ churrasco no chão (à parte). 
+                    Telão 3,04 X 2,28 cm. (somente telão). COZINHA: Super Completa c/ Geladeira, Fogão, Micro-ondas, Cafeteira c/ Capsula, Frigobar, Armários, Panelas em geral inclusive Air Fryer 12 ltrs, Bebedouro, Garrafas Térmicas, Toalhas, Copos e Taças, Utensílios p/ até 80 pes. 
+                    TUDO NOVINHO. SUÍTES: 7 Suítes completas; 9 Camas Casal, Bicamas e Camas de Solteiro tudo Box, NOVAS, 7 Ar Condicionado, Ventiladores de Teto, Espelhos, Cortinas TUDO NOVO. 
+                    SALA DE JOGOS E BRINQUEDOS: Pebolim, Pula Pula, Cama Elástica, Piscina de Bolinhas, Escorregador, Gangorra, Dominó, Cartas, Tabuleiro Xadrez NOVO, Mesa de Bilhar. 
+                    CAMPO FUTEBOL: 600 m2 c/ Traves, Gramado, Bolas... ÁREAS DE LAZER: Não falta áreas de lazer, Jardins, 11 Redes de Descanso Novas. Lareira Móvel com cadeiras. 
+                    SALAS: TV 65 Pol., TV SKY, Sofás, NOVOS, Quadros, TV p/ Jogos de Crianças. Pé Direito Alto, Lareira Completa NOVA. 
+                    INFRAESTRUTURA: 9 Banheiros c/ Box, Lavabo, Área de 5.400 M2, Estacionamento Grande, Parcerias c/ Fornecedores de Bebidas inclusive Chopp, Doces, Fotografo, Buffet, Churrasqueiros, Serviços Diarista/Caseira R$ 170,00. 
+                    Casa Plana c/ Várias aptidões, acomoda até 30 pessoas ou até mais... e é possível realizar Confraternizações p/ até 80 pessoas., Home Office (600 Mega) Excelente. 
+                    Máquina de Lavar Roupas NOVA, Total Segurança, Asfalto na Porta do Condomínio, Aceita PET, Excelente Clima Privilegiado que é Fundamental.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="event event--oque-levar event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">O quê você pode levar:</h2>
+                <img src="./images/kit-churrasco-site-fev23.jpg" alt="kit churrasco">
+                <p class="event__details__description">
+                    Aquele kit básicão de churras, o corte da carne fica a seu critério, não precisa incluir o carvão, partiu.
+                </p>
+            </div>
+            <img class="event__image" src="./images/ursinho.gif" alt="ursinho comemorando">
+        </div>
+    </section>
+    <section class="event event--quando">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">O Dia e a Hora:</h2>
+                <img src="./images/comemoracao.jpg" alt="">
+                <p class="event__details__description">
+                    Vamos iniciar nossa festa no dia 16.08 às 09:30hs, passaremos o dia aproveitando o lugar, com muita música e comida a vontade, ao final da tarde teremos aquele parabéns de respeito a esse cara diferenciado, os que desejarem poderão permanecer para o after que se encerrará ao meio dia do dia seguinte, Esperamos por você lá.
+                </p>
+            </div>
+            <img class="event__image" src="./images/ursinho_espelho.gif" alt="ursinho comemorando">
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
